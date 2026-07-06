@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   font-family: Open Sans, Roboto, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--texto);
   background: var(--branco);
   text-align: justify;
@@ -38,10 +38,17 @@ header {
 }
 
 .menuSuperior {
+  /* display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  height: 60px; */
   display: flex;
   align-items: flex-end;
   align-content: flex-end;
+  flex-wrap: wrap;
   height: 60px;
+  justify-content: center;  
 }
 
 .menuSuperior a{
@@ -61,17 +68,20 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 48px;
+  height: 70px;
   z-index: 100;
   background: var(--azul);
   color: var(--branco);
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 0 24px;
+  justify-content: space-between;
+  padding: 20px 10px;
   box-sizing: border-box;
   font-size: 14px;   
+}
+footer a{
+  color: var(--branco);
 }
 
 .conteudo {
@@ -116,4 +126,69 @@ footer {
   text-align: center;
   margin: 0;
   color: var(--azul);
+}
+
+.icons {
+  height: 20px;
+  width: 20px;
+  margin: 0px 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    flex-direction: column;
+    padding: 8px 0;
+  }
+
+  .logoimg {
+    height: 56px;
+  }
+
+  .menuSuperior {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menuSuperior a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .conteudo {
+    margin-top: 130px;
+    padding: 20px;
+  }
+
+  .secao {
+    scroll-margin-top: 140px;
+    min-height: auto;
+    padding: 28px 0;
+  }
+
+  .bvimg {
+    max-width: 90%;
+    width: 90%;
+    height: auto;
+  }
+
+  .secao h1,
+  .secao h1.slogan {
+    font-size: 32px;
+  }
+
+  body {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  footer {
+    position: static;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 16px 20px;
+  }
 }
