@@ -9,5 +9,6 @@ Site institucional da Duplessys Sistemas de Informação.
 - Laboratório de estudos
 
 ## Status
-
-Em desenvolvimento
+html desenvolvido
+ajustando texto por sessões
+portfólio
